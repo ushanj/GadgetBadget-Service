@@ -45,7 +45,7 @@ public class RegisterService {
 	
 	
 	
-//Update	
+//Update API
 	
 	@PUT
 	@Path("/")
