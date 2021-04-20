@@ -15,7 +15,7 @@ import org.jsoup.nodes.Document;
 public class RegisterService {
 	Register ob=new Register();
 
-//Read
+//Read API
 	@GET
 	@Path("/")
 	@Produces(MediaType.TEXT_HTML)
