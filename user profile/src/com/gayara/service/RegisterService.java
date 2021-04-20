@@ -66,7 +66,7 @@ public class RegisterService {
 	return output;
 	}
 
-//Delete	
+//Delete API	
 	@DELETE
 	@Path("/")
 	@Consumes(MediaType.APPLICATION_XML)
