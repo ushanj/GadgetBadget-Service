@@ -75,7 +75,7 @@ public class RegisterService {
 	//Convert the input string to an XML document
 	 Document doc = Jsoup.parse(userData, "", Parser.xmlParser());
 
-	//Read the value from the element <itemID>
+	//Read the value from the element <ID>
 	 String ID = doc.select("ID").text();
 	 String output = ob.deleteDetails(ID);
 	return output;
