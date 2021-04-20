@@ -64,7 +64,7 @@ public class Register {
 	 }
 	catch (Exception e)
 	 {
-	 output = "Error while inserting";
+	 output = "Error while inserting user details";
 	 System.err.println(e.getMessage());
 	 }
 	return output;
@@ -123,7 +123,7 @@ public class Register {
 	 }
 	 catch (Exception e)
 	 {
-	 output = "Error while reading the details.";
+	 output = "Error while reading the user details.";
 	 System.err.println(e.getMessage());
 	 }
 	 return output;
@@ -158,7 +158,7 @@ public class Register {
 		 }
 		 catch (Exception e)
 		 {
-		 output = "Error while updating the item.";
+		 output = "Error while updating the user details.";
 		 System.err.println(e.getMessage());
 		 }
 		 return output; 
@@ -187,7 +187,7 @@ public class Register {
 	 }
 	 catch (Exception e)
 	 {
-	 output = "Error while deleting the item.";
+	 output = "Error while deleting the User Account.";
 	 System.err.println(e.getMessage());
 	 }
 	 return output;
