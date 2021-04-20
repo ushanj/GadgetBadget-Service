@@ -15,6 +15,7 @@ import org.jsoup.nodes.Document;
 public class RegisterService {
 	Register ob=new Register();
 
+//Read
 	@GET
 	@Path("/")
 	@Produces(MediaType.TEXT_HTML)
@@ -25,7 +26,7 @@ public class RegisterService {
 	
 	
 	
-	
+//Insert
 
 	@POST
 	@Path("/")
@@ -43,7 +44,7 @@ public class RegisterService {
 	
 	
 	
-	
+//Update	
 	
 	@PUT
 	@Path("/")
@@ -64,7 +65,7 @@ public class RegisterService {
 	return output;
 	}
 
-	
+//Delete	
 	@DELETE
 	@Path("/")
 	@Consumes(MediaType.APPLICATION_XML)

@@ -8,7 +8,7 @@ import java.sql.Statement;
 
 public class Register {
 	
-	
+//DB Connection	
 	public static Connection connect()
 	{
 	 Connection con = null;
@@ -33,7 +33,7 @@ public class Register {
 	
 	
 	
-
+//Insert Method
 	
 	public String insertuserdetails(String Name, String Email, String Address, String Username,String Password)
 	{
@@ -75,7 +75,7 @@ public class Register {
 	
 	
 
-	
+//Read Method	
 	
 	public String readDetails()
 	 {
@@ -131,7 +131,7 @@ public class Register {
 	
 	
 	
-	
+//Update Method	
 	
 	public String updateDetails(String ID, String Name, String Email, String Address, String Username,String Password) {
 		String output = "";
@@ -166,7 +166,7 @@ public class Register {
 	}
 	
 	
-	
+//Delete Method	
 	public String deleteDetails(String ID)
 	 {
 	 String output = "";
