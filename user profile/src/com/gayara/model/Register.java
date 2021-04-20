@@ -64,7 +64,7 @@ public class Register {
 	 }
 	catch (Exception e)
 	 {
-	 output = "Error while inserting user details";
+	 output = "Error while inserting details";
 	 System.err.println(e.getMessage());
 	 }
 	return output;
