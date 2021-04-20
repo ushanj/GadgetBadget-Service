@@ -86,7 +86,8 @@ public class Register {
 	 if (con == null)
 	 {return "Error while connecting to the database for reading."; }
 	 // Prepare the html table to be displayed
-	 output = "<table border='1'><tr><th>Name</th><th>Email</th>" +
+	 output = "<table border='1'><tr><th>ID</th><th>Name</th>" +
+	 "<th>Email</th>" +
 	 "<th>Address</th>" +
 	 "<th>Username</th>" +
 	 "<th>Password</th>" +
@@ -105,7 +106,8 @@ public class Register {
 	 String Username = rs.getString("Username");
 	 String Password = rs.getString("Password");
 	 // Add into the html table
-	 output += "<tr><td>" + Name + "</td>";
+	 output += "<tr><td>" + ID + "</td>";
+	 output += "<td>" + Name + "</td>";
 	 output += "<td>" + Email + "</td>";
 	 output += "<td>" + Address + "</td>";
 	 output += "<td>" + Username + "</td>";
@@ -195,9 +197,7 @@ public class Register {
 	
 	
 	
-	
-	
-	
+
 	
 	
 	

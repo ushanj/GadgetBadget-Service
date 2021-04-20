@@ -24,6 +24,7 @@ public class RegisterService {
 		return ob.readDetails();
 	}
 	
+
 	
 	
 //Insert
