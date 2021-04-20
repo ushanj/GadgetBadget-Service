@@ -27,7 +27,7 @@ public class RegisterService {
 
 	
 	
-//Insert
+//Insert API
 
 	@POST
 	@Path("/")
