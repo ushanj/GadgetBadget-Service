@@ -13,7 +13,7 @@ public class Research {
 	 Class.forName("com.mysql.jdbc.Driver");
 
 	 //Provide the correct details: DBServer/DBName, username, password
-	 con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/test", "root", "");
+	 con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/researchmanage", "root", "");
 	 }
 	 catch (Exception e)
 	 {e.printStackTrace();}
@@ -85,7 +85,7 @@ public class Research {
 	 // iterate through the rows in the result set
 	 while (rs.next())
 	 {
-	 String rID = rs.getString("rID");
+	 String rID = Integer.toString(rs.getInt("rID")); 
 	 String name = rs.getString("name");
 	 String email = rs.getString("email");
 	 String number = rs.getString("number");
@@ -139,7 +139,7 @@ public class Research {
 	 preparedStmt.setString(3, number);
 	 preparedStmt.setString(4, projname);
 	 preparedStmt.setString(5, details);
-	 preparedStmt.setString(6, rID);
+	 preparedStmt.setInt(6, Integer.parseInt(rID));
 	 // execute the statement
 	 preparedStmt.execute();
 	 con.close();
@@ -168,7 +168,7 @@ public class Research {
 	 PreparedStatement preparedStmt = con.prepareStatement(query);
 	 
 	 // binding values
-	 preparedStmt.setString(1,rID);
+	 preparedStmt.setInt(1, Integer.parseInt(rID)); 
 	 // execute the statement
 	 preparedStmt.execute();
 	 con.close();
