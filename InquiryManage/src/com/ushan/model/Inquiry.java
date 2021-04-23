@@ -52,7 +52,7 @@ public class Inquiry {
 	 } 
 	 catch (Exception e) 
 	 { 
-	 output = "Error while inserting the item."; 
+	 output = "Error while inserting the inquiry."; 
 	 System.err.println(e.getMessage()); 
 	 } 
 	 return output; 
@@ -73,7 +73,8 @@ public class Inquiry {
 	 if (con == null) 
 	 {return "Error while connecting to the database for reading."; } 
 	 // Prepare the html table to be displayed
-	 output = "<table border='1'><tr><th>Name</th><th>Email</th>" +
+	 output = "<table border='1'><tr><th>Inquiry ID</th>"+ 
+	 "<th>Name</th><th>Email</th>" +
 	 "<th>Subject</th>" + 
 	 "<th>Message</th>" +
 	 "<th>Update</th><th>Remove</th></tr>"; 
@@ -91,7 +92,8 @@ public class Inquiry {
 	 
 	 String message = rs.getString("message"); 
 	 // Add into the html table
-	 output += "<tr><td>" + name + "</td>"; 
+	 output += "<tr><td>" + eID + "</td>"; 
+	 output += "<td>" + name + "</td>"; 
 	 output += "<td>" + email + "</td>"; 
 	 output += "<td>" + subject + "</td>"; 
 	 output += "<td>" + message + "</td>"; 
@@ -108,7 +110,7 @@ public class Inquiry {
 	 } 
 	 catch (Exception e) 
 	 { 
-	 output = "Error while reading the items."; 
+	 output = "Error while reading the inquiries."; 
 	 System.err.println(e.getMessage()); 
 	 } 
 	 return output; 
@@ -142,7 +144,7 @@ public class Inquiry {
 		 } 
 		 catch (Exception e) 
 		 { 
-		 output = "Error while updating the item."; 
+		 output = "Error while updating the inquiry."; 
 		 System.err.println(e.getMessage()); 
 		 } 
 		 return output; 
@@ -174,7 +176,7 @@ public class Inquiry {
 	 } 
 	 catch (Exception e) 
 	 { 
-	 output = "Error while deleting the item."; 
+	 output = "Error while deleting the inquiry."; 
 	 System.err.println(e.getMessage()); 
 	 } 
 	 return output; 
