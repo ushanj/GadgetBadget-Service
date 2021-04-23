@@ -107,7 +107,7 @@ public class Inquiry {
 	 con.close(); 
 	 
 	 
-	 // Complete the html table
+	 /// Complete the html table
 	 output += "</table>"; 
 	 } 
 	 
