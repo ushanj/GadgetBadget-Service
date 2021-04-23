@@ -105,6 +105,7 @@ public class Inquiry {
 	 + "'>" + "</form></td></tr>"; 
 	 } 
 	 con.close(); 
+	 
 	 // Complete the html table
 	 output += "</table>"; 
 	 } 
